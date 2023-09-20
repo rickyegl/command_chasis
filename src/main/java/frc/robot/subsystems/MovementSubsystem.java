@@ -43,8 +43,16 @@ public class MovementSubsystem extends SubsystemBase{
         m_rightMotor.set(1);
         m_leftMotor.set(1);
       }
+      if(dir==2){
+        m_rightMotor.set(-1);
+        m_leftMotor.set(1);
+      }
       if(dir==3){
         m_rightMotor.set(-1);
+        m_leftMotor.set(-1);
+      }
+      if(dir==4){
+        m_rightMotor.set(1);
         m_leftMotor.set(-1);
       }
       if(dir==0){
